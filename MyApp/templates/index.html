@@ -1,0 +1,138 @@
+<html>
+{% extends 'base.html' %}
+{% block pagetitle %}
+PD Model
+{% endblock pagetitle %}
+{% block body %}
+
+ 
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/02/03/04/20250203045551-4JQ9KF06.js"></script>
+        
+<style>
+    .btn-outline-success:hover {
+        color: white !important;
+        background-color: green !important;
+        transition: all 0.3s !important;
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    .wrapper {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content {
+        height: 100vh;
+        overflow: hidden;
+    }
+</style>
+
+<div class="wrapper">
+    <div class="content">
+        <div class="container">
+            <div class="row mb-5 text-center text-white">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>PD Predict </b></h1>
+                    <p class="lead" style="font-weight: 500;color: black;">Classification and Treatment for Plant Diseases</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mx-auto">
+                    <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+                        <h5><b>Why is it necessary to detect disease in plant ?</b></h5>
+                        <p>Plant diseases affect the growth of their respective species. In addition, some research gaps are
+                            identified from which to obtain greater transparency for detecting diseases in plants, even
+                            before their symptoms appear clearly.
+                            diagnosis is one of the most important aspects of a plant pathologist's training. Without proper
+                            identification of the disease and the disease-causing agent, disease control measures can be a
+                            waste of time and money and can lead to further plant losses. Proper disease diagnosis is
+                            necessary.
+                        </p>
+                    </div>
+                </div>
+                <div class="col mx-auto">
+                    <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+                        <form action="/submit" method="POST" enctype="multipart/form-data">
+                            <div class="custom-file overflow-hidden mb-4">
+                                <input type="file" id="actual-btn" hidden name="image" />
+                                <label class="lbl" for="actual-btn" style="display: block; text-align: center;">Choose File</label>
+                                <span id="file-chosen"></span>
+                            </div>
+                            <!-- <img id="preview" src="{{image_url}}" alt="Camera Photo Preview" style="display: none; max-width: 100%;" /> -->
+                            <h6 class="text-center mb-4 text-muted">
+                                Upload the image of the leaf you want to predict!.
+                            </h6>
+                            <center>
+                                <a class="mx-2"><button type="submit" class="btn btn-outline-success">Submit</button></a>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+                <div class="col mx-auto">
+                    <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+                        <h5><b>To Prevent Plant Disease follow below steps:</b></h5>
+                        <ol>
+                            <li>Follow Good Sanitation Practices.</li>
+                            <li>Fertilize to Keep Your Plants Healthy.</li>
+                            <li>Inspect Plants for Diseases Before You Bring Them Home.</li>
+                            <li>Allow the Soil to Warm Before Planting.</li>
+                            <li>Ensure a Healthy Vegetable Garden By Rotating Crops.</li>
+                            <li>Provide Good Air Circulation</li>
+                            <li>Remove Diseased Stems and Foliage</li>
+                        </ol>
+                        <a target="_blank" href="https://www.thespruce.com/plant-diseases-5092682" class="mx-2"><button type="button" class="btn btn-outline-success">More info</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+{% block footer %}
+{% endblock footer %}
+
+<script>
+    const actualBtn = document.getElementById('actual-btn');
+    const fileChosen = document.getElementById('file-chosen');
+
+    actualBtn.addEventListener('change', function () {
+        fileChosen.textContent = this.files[0].name
+    })
+
+    let capturedFile = null;
+
+    function dataURItoBlob(dataURI) {
+        const byteString = atob(dataURI.split(',')[1]);
+        const arrayBuffer = new ArrayBuffer(byteString.length);
+        const uintArray = new Uint8Array(arrayBuffer);
+        for (let i = 0; i < byteString.length; i++) {
+            uintArray[i] = byteString.charCodeAt(i);
+        }
+        return new Blob([uintArray], { type: 'image/jpeg' });
+    }
+
+    document.getElementById('actual-btn').addEventListener('click', function () {
+        if (capturedFile) {
+            const dataTransfer = new DataTransfer();
+            dataTransfer.items.add(capturedFile);
+            document.getElementById('actual-btn').files = dataTransfer.files;
+        }
+    });
+
+    function dataUrlToFile(dataUrl, filename) {
+        const arr = dataUrl.split(',');
+        const mime = arr[0].match(/:(.*?);/)[1];
+        const bstr = atob(arr[1]);
+        const n = bstr.length;
+        const u8arr = new Uint8Array(n);
+
+        while (n--) {
+            u8arr[n] = bstr.charCodeAt(n);
+        }
+
+        return new File([u8arr], filename, { type: mime });
+    }
+</script>
