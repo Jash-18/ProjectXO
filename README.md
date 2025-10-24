@@ -4,7 +4,7 @@
 
 **Advanced Plant Disease Classification using Custom CNN Architecture**
 
-[![🚀 Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Try%20Now-brightgreen?style=for-the-badge)](https://huggingface.co/spaces/AceMaster018/plant-disease-detector)
+[![🚀 Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Try%20Now-brightgreen?style=for-the-badge)](https://huggingface.co/spaces/Jaswanth018/plant-disease-XO)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg?style=flat-square)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Latest-red.svg?style=flat-square)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
@@ -14,7 +14,7 @@
 
 ## 🎯 Interactive Demo
 
-### 🔥 **[Test the Model Live - Click Here!](https://huggingface.co/spaces/AceMaster018/plant-disease-detector)** 🔥
+### 🔥 **[Test the Model Live - Click Here!](https://huggingface.co/spaces/Jaswanth018/plant-disease-XO)** 🔥
 
 **Upload any plant leaf image and get instant AI diagnosis with treatment recommendations!**
 - ⚡ **Lightning Fast**: Results in under 1 second
@@ -220,7 +220,7 @@ Plant disease classification faces inherent challenges due to the **38-class mul
 
 ### **🌐 Option 1: Instant Online Demo (Recommended)**
 
-**👆 [Click Here to Try the Live Demo](https://huggingface.co/spaces/AceMaster018/plant-disease-detector)**
+**👆 [Click Here to Try the Live Demo](https://huggingface.co/spaces/Jaswanth018/plant-disease-XO)**
 
 Simply upload an image and get instant results - no installation required!
 
@@ -485,7 +485,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 |------------|---------------|--------------|
 | **🐛 Bugs** | [GitHub Issues](https://github.com/Jash-18/ProjectXO/issues) | 24-48 hours |
 | **💡 Features** | [GitHub Discussions](https://github.com/Jash-18/ProjectXO/discussions) | 2-7 days |
-| **🚀 Demo Issues** | [Hugging Face Community](https://huggingface.co/spaces/AceMaster018/plant-disease-detector/discussions) | 1-2 days |
+| **🚀 Demo Issues** | [Hugging Face Community](https://huggingface.co/spaces/Jaswanth018/plant-disease-XO/discussions) | 1-2 days |
 
 ### **📊 Project Statistics**
 
@@ -508,7 +508,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 🌱 **Ready to Detect Plant Diseases?** 🌱
 
-### **[🚀 Try the Live Demo Now!](https://huggingface.co/spaces/AceMaster018/plant-disease-detector)**
+### **[🚀 Try the Live Demo Now!](https://huggingface.co/spaces/Jaswanth018/plant-disease-XO)**
 
 **Made with ❤️ for farmers, researchers, and plant enthusiasts worldwide**
 
