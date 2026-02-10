@@ -442,15 +442,6 @@ Training Configuration:
 
 ---
 
-## ⚖️ License & Disclaimer
-
-### **📄 MIT License**
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-### **⚠️ Important Disclaimer**
-
-**🚨 This tool provides AI-generated suggestions for educational purposes only.**
-
 #### **Professional Consultation Required**
 - **🌾 Agricultural Extension Services** - For commercial farming decisions
 - **🔬 Plant Pathologists** - For severe disease outbreaks
@@ -476,16 +467,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Plant Pathology Community** - Domain knowledge and research foundation
 
 ---
-
-## 📞 Support & Community
-
-### **🆘 Getting Help**
-
-| Issue Type | Contact Method | Response Time |
-|------------|---------------|--------------|
-| **🐛 Bugs** | [GitHub Issues](https://github.com/Jash-18/ProjectXO/issues) | 24-48 hours |
-| **💡 Features** | [GitHub Discussions](https://github.com/Jash-18/ProjectXO/discussions) | 2-7 days |
-| **🚀 Demo Issues** | [Hugging Face Community](https://huggingface.co/spaces/Jaswanth018/plant-disease-XO/discussions) | 1-2 days |
 
 ### **📊 Project Statistics**
 
