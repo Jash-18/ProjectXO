@@ -468,24 +468,7 @@ Training Configuration:
 
 ---
 
-### **📊 Project Statistics**
 
-<div align="center">
-
-| 📈 **Metric** | 📊 **Value** |
-|---------------|-------------|
-| **Model Accuracy** | 97.3% |
-| **Supported Species** | 14 plants |
-| **Disease Classes** | 38 total |
-| **Training Images** | 54,305 |
-| **Model Size** | 50MB |
-| **Inference Speed** | 0.43s |
-
-</div>
-
----
-
-<div align="center">
 
 ## 🌱 **Ready to Detect Plant Diseases?** 🌱
 
